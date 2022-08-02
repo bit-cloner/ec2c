@@ -19,7 +19,7 @@ jobs:
 
     - name: Build Windows
       uses: thatisuday/go-cross-build@v1
-        with:
+      with:
             platforms: 'linux/amd64, darwin/amd64, windows/amd64'
             package: ''
             name: 'ec2c'
