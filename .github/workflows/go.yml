@@ -7,24 +7,25 @@ on:
 
 jobs:
 
-  build:
+  releases-matrix:
+    name: Release Go Binary
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # build and publish in parallel: linux/amd64
+        goos: [linux]
+        goarch: [amd64]
     steps:
-    - uses: actions/checkout@v3
-
-    - name: Set up Go
-      uses: actions/setup-go@v3
-      with:
-        go-version: 1.18
-
-    - name: Build Windows
-      run: GOOS=windows GOARCH=amd64 go build -o windows ec2c
-    - name: Build darwin
-      run: GOOS=darwin GOARCH=amd64 go build -o darwinamd ec2c
-    - name: Build darwin
-      run: GOOS=darwin GOARCH=arm64 go build -o darwinarm ec2c
-    - name: Build darwin
-      run: GOOS=linux GOARCH=amd64 go build -o linuxamd ec2c
+      - uses: actions/checkout@v2
+      - uses: wangyoucao577/go-release-action@v1.16
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: ${{ matrix.goos }}
+          goarch: ${{ matrix.goarch }}
+          project_path: "./"
+          binary_name: "ec2c"
+          ldflags: "-s -w"
+          extra_files: LICENSE Readme.md
     
 
     
