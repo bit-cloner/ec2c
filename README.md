@@ -13,6 +13,7 @@ EC2-C stands for EC2 Copy : Copy/migrate EC2 instances from one AWS account to a
 2. Target AWS account number
 
 ### How to get it
+Chose the right artifact for your CPU architecture and OS type from https://github.com/bit-cloner/ec2c/releases
 ```
 wget https://github.com/bit-cloner/ec2c/releases/download/0.9.1/ec2c-0.9.1-linux-amd64.tar.gz
 ```
