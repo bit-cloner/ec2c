@@ -38,6 +38,5 @@ chmod +x ./ec2c
 3. Another Other features/ bugs , please file an issue
 4. Code optimization to take advantage of go routines and functions
 
-### Support
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/welldone"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="welldone" /></a></p><br><br>
