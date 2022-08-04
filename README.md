@@ -1,5 +1,5 @@
-### What is EC2C ![alt text](easy.gif "Easy to see")
-Pronounced "Easy to see" EC2-C stands for EC2 Copy : Copy/migrate EC2 instances from one AWS account to another AWS account from the comfort of a commnad line.
+### What is EC2C                                      ![alt text](easy.gif "Easy to see")
+Pronounced "Easy to see" EC2C stands for EC2 Copy : Copy/migrate EC2 instances from one AWS account to another AWS account from the comfort of a commnad line.
 
 ### Problem
 Migrating EC2 instances from one AWS account to another is a disjointed process that involves creating an AMI , waiting for it to be available and then changing permissions on it so that AMIs are available in the target account. This becomes tedious when there are multiple EC2 instances that needs to be migrated. Automation of this task involves wrapping AWS CLI commands with right flags into a bash or powershell script.
