@@ -1,4 +1,4 @@
-### What is EC2C &nbsp; &nbsp; &nbsp; ![alt text](easy.gif "Easy to see")
+### What is EC2C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![alt text](easy.gif "Easy to see")
 Pronounced "Easy to see" EC2C stands for EC2 Copy : Copy/migrate EC2 instances from one AWS account to another AWS account from the comfort of a commnad line.
 
 ### Problem
