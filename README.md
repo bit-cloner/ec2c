@@ -36,3 +36,4 @@ chmod +x ./ec2c
 1. Have an import mode so that the same CLI can be used to launch EC2s from shared AMI images
 2. Handle KMS keys and permissions propogation to target account
 3. Another Other features/ bugs , please file an issue
+4. Code optimization to take advantage of go routines and functions
