@@ -13,7 +13,7 @@
 !*.go
 !go.sum
 !go.mod
-!easy,gif
+!easy.gif
 
 !Readme.md
 !LICENSE
