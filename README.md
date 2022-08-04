@@ -1,6 +1,11 @@
 ### What is EC2C
 EC2-C stands for EC2 Copy : Copy/migrate EC2 instances from one AWS account to another AWS account from the comfort of a commnad line.
 
+### Problem
+Migrating EC2 instances from one AWS account to another is a disjointed process that involves creating an AMI , waiting for it to be available and then changing permissions on it so that AMIs are available in the target account. This becomes tedious when there are multiple EC2 instances that needs to be migrated. Automation of this task involves wrapping AWS CLI commands with right flags into a bash or powershell script.
+Terraform can perform these tasks in a semi disjointed way but it involves state managemnent of entire infrastructure and the blast radius is quiet high for any misconfigurations.
+EC2C is laser focused zero dependency CLI tool to migrate EC2 instances in a fool proof way.  
+
 ### What can EC2C do
 1. Shows you a list of EC2 instances from the AWS account and chosen Region as per AWS credentials
 2. Creates Amaxzon Machine Images for chosen EC2 instances.
@@ -27,3 +32,7 @@ chmod +x ./ec2c
 ```
 ./ec2c
 ```
+### Future improvements
+1. Have an import mode so that the same CLI can be used to launch EC2s from shared AMI images
+2. Handle KMS keys and permissions propogation to target account
+3. Another Other features/ bugs , please file an issue
